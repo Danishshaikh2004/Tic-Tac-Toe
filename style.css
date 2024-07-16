@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(121, 121, 232);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: darkblue;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.gamecontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.game{
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3, 20vh);
+    grid-template-columns: repeat(3, 20vh);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkblue;
+}
+.game :hover{
+    background-color: rgb(103, 103, 197);
+}
+.boxtext{
+    color: white;
+    font-size: 5vw;
+}
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.info h1{
+    padding: 30px;
+    font-size: 3.0em;
+}
+.turner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.turner h2{
+    font-size: 2.5em;
+}
+button{
+    padding: 5px;
+    width: 20%;
+    height: 40%;
+    background-color: darkblue;
+    color: white;
+    font-size: larger;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(103, 103, 197);
+}
+
+.line{
+    width: 0;
+    height: 5px;
+    background-color: darkblue;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 1058px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .info{
+        margin-top: 30px;
+    }
+    .info h1{
+        font-size: 2.0em;
+    }
+    .turner h2{
+        font-size: 2.0em;
+    }
+}
+
